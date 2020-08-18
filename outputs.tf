@@ -1,5 +1,5 @@
 output "status" {
-    value = "${ibm_pi_instance.pvminstance.pi_instance_status}"
+    value = "${ibm_pi_instance.pvminstance.status}"
 }
 
 output "ip_address" {
