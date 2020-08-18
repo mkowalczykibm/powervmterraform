@@ -57,11 +57,6 @@ variable "system_type" {
     default     = "s922"
 }
 
-variable "migratable" {
-    description = "Can the VM be migrated - true/false"
-    default     = "true"
-}
-
 variable "image_id" {
     description = "ID of the image from which the VM should be deployed"
     default     = "61e316d8-ecf9-4fae-8a83-dde7a77d89d7"
