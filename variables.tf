@@ -39,6 +39,7 @@ variable "proc_type" {
 
 variable "ssh_key_name" {
     description = "SSH key name in IBM Cloud to be used for SSH logins"
+    default     = "aix_key"
 }
 
 variable "shareable" {
