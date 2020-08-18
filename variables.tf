@@ -48,8 +48,8 @@ variable "shareable" {
 }
 
 variable "networks" {
-    description = "Networks to be attached to the VM"
-    default     = ["subnet1fra4mk"]
+    description = "Networks IDs to be attached to the VM"
+    default     = ["da003e0b-89bb-44aa-a4c2-daa920502b32"]
 }
 
 variable "system_type" {
