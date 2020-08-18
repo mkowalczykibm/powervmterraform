@@ -62,9 +62,9 @@ variable "migratable" {
     default     = "true"
 }
 
-variable "image_name" {
-    description = "Name of the image from which the VM should be deployed"
-    default     = "7100-05-04"
+variable "image_id" {
+    description = "ID of the image from which the VM should be deployed"
+    default     = "61e316d8-ecf9-4fae-8a83-dde7a77d89d7"
 }
 
 variable "replication_policy" {
