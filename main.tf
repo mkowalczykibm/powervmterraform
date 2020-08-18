@@ -17,7 +17,7 @@ resource "ibm_pi_instance" "pvminstance" {
     pi_proc_type          = "${var.proc_type}"
     pi_image_id           = "${var.image_id}"
     pi_volume_ids         = []
-    pi_network_ids        = ["${data.ibm_pi_network.power_networks.*.networkid}"]
+    pi_network_ids        = ["${var.network_id}"]
     pi_key_pair_name      = "${var.ssh_key_name}"
     pi_sys_type           = "${var.system_type}"
     pi_replication_policy = "${var.replication_policy}"
