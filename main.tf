@@ -15,7 +15,6 @@ resource "ibm_pi_instance" "pvminstance" {
     pi_processors         = "${var.processors}"
     pi_instance_name      = "${var.vm_name}"
     pi_proc_type          = "${var.proc_type}"
-    pi_migratable         = "${var.migratable}"
     pi_image_id           = "${var.image_id}"
     pi_volume_ids         = []
     pi_network_ids        = ["${data.ibm_pi_network.power_networks.*.networkid}"]
