@@ -4,11 +4,11 @@
 #    content_base64    = "${var.vm_private_key_base64}"
 #    filename          = "tmp/id_rsa"
 #}
-data "ibm_pi_network" "power_networks" {
-    count                = "${length(var.networks)}"
-    pi_network_name      = "${var.networks[count.index]}"
-    pi_cloud_instance_id = "${var.power_instance_id}"
-}
+#data "ibm_pi_network" "power_networks" {
+#    count                = "${length(var.networks)}"
+#    pi_network_name      = "${var.networks[count.index]}"
+#    pi_cloud_instance_id = "${var.power_instance_id}"
+#}
 
 resource "ibm_pi_instance" "pvminstance" {
     pi_memory             = "${var.memory}"
