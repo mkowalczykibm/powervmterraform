@@ -7,6 +7,11 @@ variable "ibmcloud_region" {
     default     = "eu-de"
 }
 
+variable "ibmcloud_zone" {
+    description = "Denotes which IBM Cloud region to connect to"
+    default     = "eu-de-1"
+}
+
 variable "vm_name" {
     description = "Name of the VM"
     default     = "demo-VM"
@@ -19,7 +24,7 @@ variable "vm_name" {
 
 variable "power_instance_id" {
     description = "Power Virtual Server instance ID associated with your IBM Cloud account (note that this is NOT the API key)"
-    default = "crn:v1:bluemix:public:power-iaas:eu-de-1:a/99b80a0159d5777253ee336a7f21921c:0ef136b8-cabf-4956-986f-c387c14dc52f::"
+    default = "0ef136b8-cabf-4956-986f-c387c14dc52f"
 }
 
 variable "memory" {
