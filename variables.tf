@@ -14,7 +14,7 @@ variable "ibmcloud_zone" {
 
 variable "vm_name" {
     description = "Name of the VM"
-    default     = "demo-VM-IaC"
+    default     = "vm-rbi-terraform"
 }
 
 #variable "vm_private_key_base64" {
