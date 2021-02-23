@@ -64,7 +64,7 @@ variable "system_type" {
 
 variable "image_id" {
     description = "ID of the image from which the VM should be deployed"
-    default     = "61e316d8-ecf9-4fae-8a83-dde7a77d89d7"
+    default     = "1132d378-c637-474f-be24-ba79274b313d"
 }
 
 variable "replication_policy" {
