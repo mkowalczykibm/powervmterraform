@@ -14,7 +14,7 @@ variable "ibmcloud_zone" {
 
 variable "vm_name" {
     description = "Name of the VM"
-    default     = "vmpowerterraform"
+    default     = "vmpowerterraform1"
 }
 
 #variable "vm_private_key_base64" {
