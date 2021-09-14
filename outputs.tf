@@ -1,7 +1,7 @@
 output "status" {
-    value = "ibm_pi_instance.pvminstance.status"
+    value = "${ibm_pi_instance.pvminstance.status}"
 }
 
 output "ip_address" {
-    value = "ibm_pi_instance.pvminstance.addresses"
+    value = "${ibm_pi_instance.pvminstance.addresses}"
 }
