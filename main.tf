@@ -11,18 +11,17 @@
 #}
 
 resource "ibm_pi_instance" "pvminstance" {
-    pi_memory             = "var.memory"
-    pi_processors         = "var.processors"
-    pi_instance_name      = "var.vm_name"
-    pi_proc_type          = "var.proc_type"
-    pi_image_id           = "var.image_id"
+    pi_memory             = "${var.memory}"
+    pi_processors         = "${var.processors}"
+    pi_instance_name      = "${var.vm_name}"
+    pi_proc_type          = "${var.proc_type}"
+    pi_image_id           = "${var.image_id}"
     pi_volume_ids         = []
-    pi_network_ids        = "var.networks"
-    pi_key_pair_name      = "var.ssh_key_name"
-    pi_sys_type           = "var.system_type"
-    pi_replication_policy = "var.replication_policy"
-    pi_replication_scheme = "var.replication_scheme"
-    pi_replicants         = "var.replicants"
-    pi_cloud_instance_id  = "var.power_instance_id"
+    pi_network_ids        = "${var.networks}"
+    pi_key_pair_name      = "${var.ssh_key_name}"
+    pi_sys_type           = "${var.system_type}"
+    pi_replication_policy = "${var.replication_policy}"
+    pi_replication_scheme = "${var.replication_scheme}"
+    pi_replicants         = "${var.replicants}"
+    pi_cloud_instance_id  = "${var.power_instance_id}"
 }
-
