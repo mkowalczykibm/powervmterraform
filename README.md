@@ -19,11 +19,11 @@ To run the example, you will need to:
 
 1. Clone this Git repository
 2. [Download and configure](https://github.com/IBM-Cloud/terraform-provider-ibm) the IBM Cloud Terraform provider (minimally v0.18.0 or later)
-3. Obtain your [IBM Cloud API key](https://cloud.ibm.com) (needed for step #5)
+3. Obtain your [IBM Cloud API key](https://cloud.ibm.com) (needed for step #6 if youre not using Schematics)
 
-3a. Alternatively you can skip steps 2 and 3 and use IBM Cloud Schematics service
+  3a. Alternatively you can skip steps 2 and 3 and use IBM Cloud Schematics service
 
-5. Upload your public SSH key to the IBM Power Virtual Server cloud (the name is needed for step #5)
+5. Upload your public SSH key to the IBM Power Virtual Server cloud (the name is needed for step #6)
 6. Update the variables.tf file to suit your needs
 
 Next, you can run the example by invoking...
